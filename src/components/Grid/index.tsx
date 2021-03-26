@@ -1,6 +1,6 @@
 import React from 'react';
-import { Container, Grid } from './styles';
 
+import { Container, Grid } from './styles';
 interface IGridProps {
   children: React.ReactNode
 }
