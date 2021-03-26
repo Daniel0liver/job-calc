@@ -1,16 +1,8 @@
 import React from 'react';
+import Routes from './routes';
 
-const App = () => {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>JobCalc</p>
-      </header>
-      <main>
-        <p>Hello word</p>
-      </main>
-    </div>
+    <Routes />
   );
 }
-
-export default App;
