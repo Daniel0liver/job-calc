@@ -2,19 +2,25 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
 } from "react-router-dom";
 
-import Dashboard from './pages/Dashboard';
+import GridWrapper from 'components/Grid';
+import Header from 'components/Header';
+
+import Dashboard from 'pages/Dashboard';
 
 export default function Routes() {
   return (
     <Router>
-      <Switch>
-        <Route path="/">
-          <Dashboard />
-        </Route>
-      </Switch>
+      <Header />
+      <GridWrapper>
+        <Switch>
+          <Route path="/">
+            <Dashboard />
+          </Route>
+        </Switch>
+      </GridWrapper>
     </Router>
   );
 }
