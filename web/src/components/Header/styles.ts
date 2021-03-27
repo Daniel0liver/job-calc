@@ -86,5 +86,9 @@ export const LinkWrapper = styled.a`
     ${Subtitle} {
       color: ${({ theme }) => theme.palette.secondary.main};
     }
+
+    ${ImageProfile} {
+      border: solid 3px ${({ theme }) => theme.palette.secondary.main};
+    }
   }
 `;
