@@ -11,6 +11,10 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${({ theme }) => theme.palette.primary.background};
   }
 
+  button:hover { 
+    cursor: pointer;
+  }
+
   body,
   button,
   input,  
