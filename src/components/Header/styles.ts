@@ -37,8 +37,8 @@ export const Alert = styled.h6`
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
-  color: ${({ theme }) => theme.palette.primary.text.p};
+  font-size: 16px;
+  color: ${({ theme }) => theme.palette.primary.contrastText};
 `;
 
 export const LabelWrapper = styled.div`
@@ -58,7 +58,7 @@ export const ImageProfile = styled.img`
 export const UserName = styled.h2`
   text-align: right;
   font-size: 16px;
-  color: ${({ theme }) => theme.palette.primary.text.p};
+  color: ${({ theme }) => theme.palette.primary.contrastText};
 `;
 
 export const Subtitle = styled.h6`
@@ -77,6 +77,7 @@ export const LinkWrapper = styled.a`
   align-items: center;
   border-radius: 4rem;
   padding: 0.2rem 0.3rem 0.2rem 2rem;
+  transition: 0.5s;
 
   &:hover {
     background-color: #53535fed;

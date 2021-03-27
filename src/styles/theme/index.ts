@@ -13,7 +13,7 @@ const theme: DefaultTheme = {
     primary: {
       main: '#41414C',
       background: '#F0F2F5',
-      contrastText: '#ffffff',
+      contrastText: '#FCFDFF',
       surface: '#FCFDFF',
       text: {
         h1: '#5A5A66',
@@ -24,7 +24,7 @@ const theme: DefaultTheme = {
     secondary: {
       main: '#F1972C',
       background: '#F0F2F5',
-      contrastText: '#ffffff',
+      contrastText: '#FCFDFF',
       surface: '#FCFDFF',
       text: {
         h1: '#5A5A66',
