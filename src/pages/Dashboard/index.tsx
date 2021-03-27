@@ -1,10 +1,14 @@
 import React from 'react';
 
+import CustomHeaderDetails from 'components/HeaderDetails';
+
+import { Container, Background } from './styles'
 
 export default function Dashboard() {
   return (
-    <div>
-      <p>Dashboard</p>
-    </div>
+    <Container>
+      <CustomHeaderDetails />
+      <Background />
+    </Container>
   );
 }
