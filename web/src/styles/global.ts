@@ -11,8 +11,24 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${({ theme }) => theme.palette.primary.background};
   }
 
+  html, body, #root {
+    min-height: 100%;
+  }
+
+  button, a {
+    cursor: pointer;
+  }
+
   button:hover { 
     cursor: pointer;
+  }
+
+  button:focus, input:focus{
+    outline: none;
+  }
+
+  input {
+    border-style: hidden;
   }
 
   body,

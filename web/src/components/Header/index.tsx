@@ -4,8 +4,6 @@ import AlertIcon from 'assets/images/alert-octagon.svg';
 import LogoIcon from 'assets/images/logo.svg';
 import ProfileIcon from 'assets/images/profile.png';
 
-import GridWrapper from 'components/Grid';
-
 import {
   Header,
   Container,
@@ -17,32 +15,30 @@ import {
   UserName,
   Subtitle,
   LinkWrapper,
-  LabelWrapper
+  LabelWrapper,
 } from './styles';
 
 export default function CustomHeader() {
   return (
     <Header>
-      <GridWrapper>
-        <Container>
-          <LeftWrapper>
-            <img src={LogoIcon} alt="Logo principal" />
-          </LeftWrapper>
-          <CenterWrapper>
-            <img src={AlertIcon} alt="Icone alerta" />
-            <Alert>Você tem 2 horas livres no seu dia</Alert>
-          </CenterWrapper>
-          <RightWrapper>
-            <LinkWrapper>
-              <LabelWrapper>
-                <UserName>Jaqueline</UserName>
-                <Subtitle>Ver perfil</Subtitle>
-              </LabelWrapper>
-              <ImageProfile src={ProfileIcon} />
-            </LinkWrapper>
-          </RightWrapper>
-        </Container>
-      </GridWrapper>
+      <Container>
+        <LeftWrapper>
+          <img src={LogoIcon} alt="Logo principal" />
+        </LeftWrapper>
+        <CenterWrapper>
+          <img src={AlertIcon} alt="Icone alerta" />
+          <Alert>Você tem 2 horas livres no seu dia</Alert>
+        </CenterWrapper>
+        <RightWrapper>
+          <LinkWrapper>
+            <LabelWrapper>
+              <UserName>Jaqueline</UserName>
+              <Subtitle>Ver perfil</Subtitle>
+            </LabelWrapper>
+            <ImageProfile src={ProfileIcon} />
+          </LinkWrapper>
+        </RightWrapper>
+      </Container>
     </Header>
   );
 }
